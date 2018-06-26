@@ -4858,7 +4858,7 @@ function (t) {
                     onReady: {
                         duration: 0,
                         render: function (t, e) {
-                            t.removeClass("is-exiting"), sessionStorage.setItem("dontLoad", "true"), t.html(e), $(".grid li").eq(sessionStorage.clickedProjectIndex).addClass("clicked"), $(".grid li").each(function (t, e) {
+                            t.removeClass("is-exiting"), sessionStorage.setItem("dontLoad", "true"), t.html(e), $(".grid li").eq(sessionStorage.clickedProjectIndex)/*.addClass("clicked")*/, $(".grid li").each(function (t, e) {
                                 null != sessionStorage.getItem("project" + t + "Loaded") && $(e).addClass("loaded")
                             })
                         }
@@ -4883,7 +4883,8 @@ function (t) {
         var a = $("#email a").html();
 
         function u() {
-            $(".grid li").removeClass("clicked"), sessionStorage.removeItem("clickedProjectIndex")
+//            $(".grid li").removeClass("clicked"), 
+                sessionStorage.removeItem("clickedProjectIndex")
         }
         if (email = a.replace(/[a-zA-Z]/g, function (t) {
                 return String.fromCharCode((t <= "Z" ? 90 : 122) >= (t = t.charCodeAt(0) + 13) ? t : t - 26)
@@ -4969,7 +4970,7 @@ function (t) {
                 return u(), !1
             }), $(".grid a").on("click", function () {
                 var t = $(this).closest("li");
-                $("#site").removeClass("noSlide"), $(".grid li").removeClass("clicked"), t.addClass("clicked"), sessionStorage.clickedProjectIndex = t.index(), sessionStorage.scrollIndexPosition = $(document).scrollTop()
+                $("#site").removeClass("noSlide"), $(".grid li")/*.removeClass("clicked"), t.addClass("clicked")*/, sessionStorage.clickedProjectIndex = t.index(), sessionStorage.scrollIndexPosition = $(document).scrollTop()
             })
 
         } else if (e.is("#project")) {

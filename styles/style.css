@@ -14,7 +14,7 @@ li.website > a > article:before {
 }
 
 .img-circle {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .img-about {
@@ -1403,7 +1403,8 @@ aside h3 {
 
 #about {
     padding-left: 1em;
-    display: block
+    display: block;
+    width: 40%;
 }
 
 #hello {
@@ -1706,9 +1707,11 @@ footer .arrow {
     .grid li.portrait article {
         height: calc(56vw + 1.9em)
     }
+/*
     footer .arrow {
         display: none
     }
+*/
     #clients,
     #feats,
     #skills,
@@ -1877,9 +1880,11 @@ footer .arrow {
     #lists:after {
         width: 7em
     }
+/*
     footer .arrow {
         display: none
     }
+*/
 }
 
 @media only screen and (min-width:48em) and (min-height:39em) {
@@ -2008,6 +2013,14 @@ only screen and (min-width:100em) and (min-height:29em) {
     #error article p,
     #presentation {
         font-size: 2.65em
+    }
+}
+
+@media only screen and (max-width:720px) {
+    #about {
+        padding-left: 0;
+        display: block;
+        width: 90%;
     }
 }
 
