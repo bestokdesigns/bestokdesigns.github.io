@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="transitions">
+
+<head>
+    <style id="stndz-style">
+        div[class*="item-container-obpd"],
+        a[data-redirect*="paid.outbrain.com"],
+        a[onmousedown*="paid.outbrain.com"] {
+            display: none !important;
+        }
+
+        a div[class*="item-container-ad"] {
+            height: 0px !important;
+            overflow: hidden !important;
+            position: absolute !important;
+        }
+
+        div[data-item-syndicated="true"] {
+            display: none !important;
+        }
+
+        .grv_is_sponsored {
+            display: none !important;
+        }
+
+        .zergnet-widget-related {
+            display: none !important;
+        }
+
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Designs by Jeana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noarchive">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Designs by Jeana">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <style type="text/css">
+        .c1-ui-state-hover {
+            background-color: yellow !important;
+            padding: 5px !important
+        }
+
+    </style>
+</head>
+
+<body class="" ng-app="jeanasmithgithubioApp" ng-controller="MainCtrl" style="background-color: darkgray;">
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">To improve your web experience and security, you should <a href="https://browsehappy.com/">upgrade your browser</a>.</p>
+    <![endif]-->
+    <div id="site" class="site noSlide">
+        <header id="header">
+            <h1 class="logo"><a href="#"><span data-text="Designs by Jeana" class="teal-bkg">Designs by Jeana</span></a></h1>
+            <p id="description"><span data-filter=".logo-i">logos</span><br><span data-filter=".website">websites</span><br><span data-filter=".t-shirt">t-shirts</span><br><span data-filter=".show-poster">show posters</span></p>
+        </header>
+        <main id="index">
+            <nav>
+                <ul class="grid" style="position: relative; height: 5394.38px;">
+
+                    <!--
+                    <li class="project portrait identity digital loaded" style="position: absolute; left: 0px; top: 0px;">
+                        <a href="https://studiofables.com/grolsch-explore">
+                            <article>
+                                <h2 class="title"><span data-text="Grolsch Explore">Grolsch Explore</span></h2>
+                                <video class="thumb" data-poster="https://studiofables.com/content/2-home/1-grolsch-explore/studiofables-grolschexplore.jpg" muted="" playsinline="" poster="https://studiofables.com/content/2-home/1-grolsch-explore/studiofables-grolschexplore.jpg">
+									<source src="https://studiofables.com/content/2-home/1-grolsch-explore/studiofables-grolschexplore.mp4" type="video/mp4">
+								</video>
+                            </article>
+                        </a>
+                    </li> -->
+
+                    <li ng-repeat="p in portfolio" class="project {{p.layout}} {{p.category}} identity loaded" style="position: absolute; left: 0px; top: 0px;">
+                        <a href="{{p.link}}" target="_blank">
+                            <article>
+                                <h2 class="title"><span data-text="{{p.name}}">{{p.name}}</span></h2>
+                                <img class="thumb" src="{{p.path}}" data-poster="{{p.path}}" alt="{{p.name}}">
+                            </article>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <footer>
+                <section>
+                    <h3>Say hello</h3>
+                    <ul>
+                        <li id="email"><a class="dymo" href="mailto:jeana.smith9@gmail.com">&nbsp;jeana.smith9@gmail.com&nbsp;</a></li>
+                        <li><img src="images/jeana-smith-smol.jpg" alt="Rounded Image" class="img-circle img-responsive img-about"></li>
+                    </ul>
+                </section>
+                <section id="follow">
+                    <h3>Follow me</h3>
+                    <ul>
+                        <li><a <li id="email"><a class="dymo" href="https://www.instagram.com/jeanachos/" target="_blank">&nbsp;Instagram&nbsp;</a></li>
+                        <li><a <li id="email"><a class="dymo" href="https://www.facebook.com/jsmith109" target="_blank">&nbsp;Facebook&nbsp;</a></li>
+                    </ul>
+                </section>
+
+                <button class="arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 36"><title>Top</title><path d="M11 6.3l-5-5-5 5m5-4.9v34"></path></svg>
+				</button>
+
+            </footer>
+        </main>
+    </div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+    <script src="scripts/app.js"></script>
+
+    <!-- endbuild -->
+    <script src="scripts/scripts.js"></script>
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-63673806-1', 'auto');
+        ga('send', 'pageview')
+
+    </script>
+
+</body>
+
+</html>

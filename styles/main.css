@@ -1,0 +1,162 @@
+body {
+    background: #018e98;
+    padding: 0px;
+}
+
+.md-space {
+    height: 70px;
+    display: block;
+}
+
+.sm-space {
+    height: 45px;
+    display: block;
+}
+
+.btn {
+    border-radius: 0;
+    transition: all 0.4s;
+}
+
+.btn-teal {
+    color: #FFFFFF;
+    background-color: #018e98 !important;
+    border-color: #018e98;
+    opacity: 1;
+}
+
+.btn-teal.btn-fill:hover,
+.btn-teal.btn-fill:focus,
+.btn-teal.btn-fill:active,
+.btn-teal.btn-fill.active,
+.open > .btn-teal.btn-fill.dropdown-toggle {
+    background-color: #046971 !important;
+    color: #FFFFFF;
+}
+
+.btn-fade {
+    opacity: 0.5 !important;
+    transition: all 0.4s;
+}
+
+.pr-1 {
+    padding-right: 5px;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.logo-container .brand {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 36px;
+}
+
+.navbar-transparent {
+    padding-bottom: 15px;
+}
+
+.logo-container .logo {
+    border: none;
+    box-shadow: 0px;
+    transition: all 0.4s;
+}
+
+.img-about {
+    display: inline-block;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 0px 12px #008e98;
+    max-width: 250px;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition: all 0.4s;
+}
+
+.img-about:hover {
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s;
+}
+
+.footer {
+    padding-top: 20%;
+    background-color: #008e98;
+}
+
+.pupapple {
+    max-width: 15%;
+}
+
+@media (max-width: 767px) {
+
+    .logo-container {
+        margin-left: 12px;
+    }
+
+    .container.gallery-container {
+        padding: 30px 15px;
+    }
+
+    .footer {
+        padding-top: 33%;
+    }
+
+    .pupapple {
+        max-width: 33%;
+    }
+
+}
+
+.row-gallery {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.column-gallery {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column-gallery {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column-gallery {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
