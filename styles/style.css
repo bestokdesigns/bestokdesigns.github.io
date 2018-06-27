@@ -3,7 +3,7 @@ li.website > a > article:before {
     top: 10px;
     right: 10px;
     opacity: 1;
-    color: darkgray;
+    color: #038080;
     font-size: 16px;
     font-family: 'Font Awesome\ 5 Free' !important;
     content: '\f35d';
@@ -21,7 +21,7 @@ li.website > a > article:before {
     max-width: 100px;
     height: auto;
     margin-top: 24px;
-    box-shadow: 0px 0px 0px 10px teal;
+    box-shadow: 0px 0px 0px 10px #038080;
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -33,6 +33,10 @@ li.website > a > article:before {
     -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
     transition: all 0.4s;
+}
+
+article {
+    box-shadow: 0 26px 40px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 
 button,
@@ -93,7 +97,7 @@ a {
 }
 
 a.dymo {
-    background-color: teal !important;
+    background-color: #038080 !important;
     color: white !important;
 }
 
@@ -341,7 +345,7 @@ button {
 }
 
 .teal-bkg {
-    background-color: teal;
+    background-color: #038080;
 }
 
 .logo.outline [data-text]:after,
@@ -1707,7 +1711,7 @@ footer .arrow {
     .grid li.portrait article {
         height: calc(56vw + 1.9em)
     }
-/*
+    /*
     footer .arrow {
         display: none
     }
@@ -1763,8 +1767,7 @@ footer .arrow {
 }
 
 @media only screen and (min-width:48em) {
-    .logo,
-    .title {
+    .logo {
         font-size: 3em;
         top: .6em
     }
@@ -1772,7 +1775,9 @@ footer .arrow {
         left: .5em
     }
     .title {
-        left: 1.5em
+        left: 1.95em;
+        font-size: 3em;
+        top: 0.85em;
     }
     .title [data-text],
     .title [data-text]:after {
@@ -1880,7 +1885,7 @@ footer .arrow {
     #lists:after {
         width: 7em
     }
-/*
+    /*
     footer .arrow {
         display: none
     }
@@ -1888,8 +1893,7 @@ footer .arrow {
 }
 
 @media only screen and (min-width:48em) and (min-height:39em) {
-    .logo,
-    .title {
+    .logo {
         font-size: 4em;
         top: .45em
     }
@@ -1897,7 +1901,9 @@ footer .arrow {
         left: .35em
     }
     .title {
-        left: 1.35em
+        left: 1.95em;
+        font-size: 3em;
+        top: 0.65em;
     }
     .title [data-text],
     .title [data-text]:after {
@@ -1973,16 +1979,19 @@ only screen and (min-width:100em) and (min-height:29em) {
     main {
         margin-top: 2em
     }
-    .logo,
-    .title {
+    .logo {
         font-size: 5em;
         top: .55em
+    }
+    .title {
+        font-size: 3em;
+        top: 1em
     }
     .logo {
         left: .25em
     }
     .title {
-        left: 1.25em
+        left: 2.25em
     }
 }
 
