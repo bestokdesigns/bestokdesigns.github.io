@@ -9,9 +9,9 @@
  * Main module of the application.
  */
 angular.module('jeanasmithgithubioApp', ['ngRoute']).config(function ($routeProvider, $locationProvider) {
-    
+
     $locationProvider.hashPrefix('');
-    
+
     $routeProvider
         .when('/', {
             templateUrl: '',
@@ -23,7 +23,7 @@ angular.module('jeanasmithgithubioApp', ['ngRoute']).config(function ($routeProv
         });
 });
 
-angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope) {
+angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope, $interval, $timeout) {
 
     $scope.category = {
         logo: {
@@ -185,60 +185,32 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope)
         }
     ];
 
-    function shuffle(list) {
-        var m = list.length,
-            t, i;
-
-        while (m) {
-            i = Math.floor(Math.random() * m--);
-            t = list[m];
-            list[m] = list[i];
-            list[i] = t;
-        };
-
-        return list;
-    };
-
-    function groupBy(myArray, chunk_size) {
-        var index = 0;
-        var arrayLength = myArray.length;
-        var tempArray = [];
-
-        for (index = 0; index < arrayLength; index += chunk_size) {
-            var myChunk = myArray.slice(index, index + chunk_size);
-            // Do something if you want with the group
-            tempArray.push(myChunk);
-        }
-
-        return tempArray;
-    }
-
-    function initPortfolio() {
-        var shuffledList = shuffle(portfolio);
-        var n = Math.ceil(shuffledList.length / 4);
-        var lists = groupBy(shuffledList, n);
-        return lists;
-    };
-
-    $scope.portfolio = shuffle(portfolio); // initPortfolio();
+    $scope.portfolio = portfolio;
     console.log('portfolio');
     console.log($scope.portfolio);
 
-//    $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
-//        baguetteBox.run('.tz-gallery');
-//    });
+    $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
+        console.log('ng-repeat finished');
+        $(".grid").isotope({
+            filter: '.none'
+        });
+        $('#index')[0].style.opacity = 1;
+        $(".grid").isotope({
+            filter: '*'
+        });
+    });
 
 });
 
-//angular.module('jeanasmithgithubioApp').directive('onFinishRender', function ($timeout) {
-//    return {
-//        restrict: 'A',
-//        link: function (scope, element, attr) {
-//            if (scope.$last === true) {
-//                $timeout(function () {
-//                    scope.$emit(attr.onFinishRender);
-//                });
-//            }
-//        }
-//    }
-//});
+angular.module('jeanasmithgithubioApp').directive('onFinishRender', function ($timeout) {
+    return {
+        restrict: 'A',
+        link: function (scope, element, attr) {
+            if (scope.$last === true) {
+                $timeout(function () {
+                    scope.$emit(attr.onFinishRender);
+                });
+            }
+        }
+    }
+});

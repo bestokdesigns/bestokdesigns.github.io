@@ -55,11 +55,12 @@
     <div id="site" class="site noSlide">
         <header id="header">
             <h1 class="logo"><a href="#"><span data-text="Designs by Jeana" class="teal-bkg">Designs by Jeana</span></a></h1>
-            <p id="description"><span data-filter=".website">websites</span><br><span data-filter=".logo-i">logos</span><br><span data-filter=".t-shirt">t-shirts</span><br><span data-filter=".show-poster">show posters</span></p>
-            
+            <p id="description"><span id="none-filter" data-filter=".none" style="display:none;">none</span><span data-filter=".website">websites</span><br><span data-filter=".logo-i">logos</span><br><span data-filter=".t-shirt">t-shirts</span><br><span data-filter=".show-poster">show posters</span></p>
+
             <p id="description-phone" align="center"><span data-filter=".website"><i class="fas fa-globe mb-3"></i></span><br><span data-filter=".logo-i"><i class="fas fa-user-circle mb-3"></i></span><br><span data-filter=".t-shirt"><i class="fas fa-tshirt mb-3"></i></span><br><span data-filter=".show-poster"><i class="fas fa-music mb-3"></i></span></p>
         </header>
-        <main id="index">
+        <main id="index" style="opacity: 0;">
+            <!--        <main id="index">-->
             <nav>
                 <ul class="grid" style="position: relative; height: 5394.38px;">
 
@@ -75,7 +76,7 @@
                         </a>
                     </li> -->
 
-                    <li ng-repeat="p in portfolio" class="project {{p.layout}} {{p.category}} identity loaded" style="position: absolute; left: 0px; top: 0px;">
+                    <li ng-repeat="p in portfolio" on-finish-render="ngRepeatFinished" class="project {{p.layout}} {{p.category}} identity loaded" style="position: absolute; left: 0px; top: 0px;">
                         <a href="{{p.link}}" target="_blank">
                             <article>
                                 <h2 class="title"><span data-text="{{p.name}}">{{p.name}}</span></h2>
@@ -91,7 +92,7 @@
                     <h3>Say hello</h3>
                     <ul>
                         <li id="email"><a class="dymo" href="mailto:jeana.smith9@gmail.com">&nbsp;jeana.smith9@gmail.com&nbsp;</a></li>
-<!--                        <li><img src="images/jeana-smith-smol.jpg" alt="Rounded Image" class="img-circle img-responsive img-about"></li>-->
+                        <!--                        <li><img src="images/jeana-smith-smol.jpg" alt="Rounded Image" class="img-circle img-responsive img-about"></li>-->
                     </ul>
                 </section>
                 <section id="about">

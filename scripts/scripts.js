@@ -4897,7 +4897,8 @@ function (t) {
                 c = $(".grid").isotope({
                     itemSelector: ".grid li",
                     layoutMode: "masonry",
-                    transitionDuration: 0
+                    transitionDuration: 0,
+                    sortBy : "random"
                 });
             if (c.isotope("layout"), c.isotope({
                     transitionDuration: 500,
@@ -4949,6 +4950,7 @@ function (t) {
                 })
             }
             $("[data-filter], .logo a").click(function () {
+                console.log('filter clicked');
                 var t, e = $(this),
                     n = $("[data-filter]");
                 e.is(".active, .logo a") ? (t = "*", n.removeClass()) : (e.is(".inactive") && n.removeClass(), t = e.attr("data-filter"), n.addClass("inactive"), e.toggleClass("inactive active")), $(window).scrollTop() > 0 ? i.animate({
