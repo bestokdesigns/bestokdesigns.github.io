@@ -72,6 +72,13 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope)
             'link': undefined
         },
         {
+            'name': 'Empty Atlas Key Logo',
+            'path': imgPrefix + 'ea-key.png',
+            'category': $scope.category.logo.type,
+            'layout': 'portrait',
+            'link': undefined
+        },
+        {
             'name': 'Empty Atlas T-Shirt',
             'path': imgPrefix + 'navy-pentagon-rose.png',
             'category': $scope.category.tshirt.type,
@@ -107,6 +114,13 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope)
             'link': undefined
         },
         {
+            'name': 'Empty Atlas CD Release Show Poster',
+            'path': imgPrefix + 'ea-hestia-release-show-poster.png',
+            'category': $scope.category.showPoster.type,
+            'layout': 'portrait',
+            'link': undefined
+        },
+        {
             'name': 'Big Sleepy\'s Show Poster',
             'path': imgPrefix + 'big-sleepys-show-poster.png',
             'category': $scope.category.showPoster.type,
@@ -114,8 +128,29 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope)
             'link': undefined
         },
         {
+            'name': 'Martin\'s Show Poster',
+            'path': imgPrefix + 'martins-show-poster.png',
+            'category': $scope.category.showPoster.type,
+            'layout': 'portrait',
+            'link': undefined
+        },
+        {
             'name': 'OffBeat Show Poster',
             'path': imgPrefix + 'offbeat-show-poster.png',
+            'category': $scope.category.showPoster.type,
+            'layout': 'portrait',
+            'link': undefined
+        },
+        {
+            'name': 'OffBeat Show Poster',
+            'path': imgPrefix + 'offbeat-show-poster-2.png',
+            'category': $scope.category.showPoster.type,
+            'layout': 'portrait',
+            'link': undefined
+        },
+        {
+            'name': 'Growlers Show Poster',
+            'path': imgPrefix + 'growlers-show-poster.png',
             'category': $scope.category.showPoster.type,
             'layout': 'portrait',
             'link': undefined
