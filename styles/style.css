@@ -1,7 +1,7 @@
 li.website > a > article:before {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 10px;
+    right: 45%;
     opacity: 1;
     color: #038080;
     font-size: 16px;
@@ -21,7 +21,7 @@ li.website > a > article:before {
     max-width: 100px;
     height: auto;
     margin-top: 24px;
-    box-shadow: 0px 0px 0px 10px #038080;
+    box-shadow: 0px 0px 0px 8px #038080;
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -87,7 +87,7 @@ kbd,
 pre,
 samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 1.1em
 }
 
 a {
@@ -99,6 +99,7 @@ a {
 a.dymo {
     background-color: #038080 !important;
     color: white !important;
+    font-size: 1em !important;
 }
 
 abbr[title] {
@@ -348,6 +349,11 @@ button {
     background-color: #038080;
 }
 
+.white-box {
+    border: 5px solid white;
+    padding: 10px;
+}
+
 .logo.outline [data-text]:after,
 [data-text] {
     color: transparent
@@ -362,44 +368,52 @@ button {
 .project-header p,
 [data-text]:after,
 h3 {
-    font-family: Jimi, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Anke, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700
 }
 
 .logo,
 .title {
-    font-family: "Jimi Outline", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Anke, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700
 }
 
 #presentation p {
-    font-family: Jimi, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Anke, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 @font-face {
-    font-family: Jimi;
-    src: url(../fonts/jimi-regular.woff2) format('woff2'), url(../fonts/jimi-regular.woff) format('woff');
+    font-family: Anke;
+    src: url(/styles/Anke.otf) format('otf');
+    font-weight: 400;
+    font-style: normal
+}
+
+/*
+@font-face {
+    font-family: Anke;
+    src: url(../fonts/Anke-regular.woff2) format('woff2'), url(../fonts/Anke-regular.woff) format('woff');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
-    font-family: Jimi;
-    src: url(../fonts/jimi-bold.woff2) format('woff2'), url(../fonts/jimi-bold.woff) format('woff');
+    font-family: Anke;
+    src: url(../fonts/Anke-bold.woff2) format('woff2'), url(../fonts/Anke-bold.woff) format('woff');
     font-weight: 700;
     font-style: normal
 }
 
 @font-face {
-    font-family: Jimi;
-    src: url(../fonts/jimi-bold-italic.woff2) format('woff2'), url(../fonts/jimi-bold-italic.woff) format('woff');
+    font-family: Anke;
+    src: url(../fonts/Anke-bold-italic.woff2) format('woff2'), url(../fonts/Anke-bold-italic.woff) format('woff');
     font-weight: 700;
     font-style: italic
 }
 
 @font-face {
-    font-family: 'Jimi Outline';
-    src: url(../fonts/jimi-bold-outline.woff2) format('woff2'), url(../fonts/jimi-bold-outline.woff) format('woff');
+    font-family: 'Anke Outline';
+    src: url(../fonts/Anke-bold-outline.woff2) format('woff2'), url(../fonts/Anke-bold-outline.woff) format('woff');
     font-weight: 700;
     font-style: normal
 }
@@ -410,6 +424,7 @@ h3 {
     font-weight: 400;
     font-style: normal
 }
+*/
 
 @-webkit-keyframes pulse {
     from {
@@ -1776,16 +1791,16 @@ footer .arrow {
         left: .5em
     }
     .title {
-        left: 1.95em;
-        font-size: 3em;
-        top: 0.85em;
+        left: 4.75em;
+        font-size: 2.25em;
+        top: 1em;
     }
     .title [data-text],
     .title [data-text]:after {
         overflow: visible;
         white-space: normal;
         text-overflow: clip;
-        min-width: 7.5em;
+        min-width: 11.5em;
         line-height: 1em
     }
     .logo.outline [data-text] {
@@ -1801,9 +1816,11 @@ footer .arrow {
         margin-top: .2em;
         margin-left: -.7em
     }
-    [data-text],
+    [data-text] {
+        color: #fff;
+    }
     [data-text]:after {
-        color: #fff
+        display: none;
     }
     #header {
         width: 28%
@@ -1902,16 +1919,16 @@ footer .arrow {
         left: .35em
     }
     .title {
-        left: 1.95em;
-        font-size: 3em;
-        top: 0.65em;
+        left: 4.75em;
+        font-size: 2.25em;
+        top: 1em;
     }
     .title [data-text],
     .title [data-text]:after {
         overflow: visible;
         white-space: normal;
         text-overflow: clip;
-        min-width: 7.5em;
+        min-width: 11.5em;
         line-height: 1em
     }
 }
@@ -1985,14 +2002,14 @@ only screen and (min-width:100em) and (min-height:29em) {
         top: .55em
     }
     .title {
-        font-size: 3em;
-        top: 1em
+        font-size: 2em;
+        top: 1.4em
     }
     .logo {
         left: .25em
     }
     .title {
-        left: 2.25em
+        left: 5.75em
     }
 }
 
@@ -2034,7 +2051,15 @@ only screen and (min-width:100em) and (min-height:29em) {
     display: none;
 }
 
+#title-phone {
+    display: none;
+}
+
 @media only screen and (max-width:720px) {
+    .hide-on-phone {
+        display: none;
+    }
+
     #about {
         padding-left: 0;
         display: block;
@@ -2042,6 +2067,10 @@ only screen and (min-width:100em) and (min-height:29em) {
     }
 
     #description-phone {
+        display: block;
+    }
+
+    #title-phone {
         display: block;
     }
 }
