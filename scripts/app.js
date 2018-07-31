@@ -72,6 +72,13 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope,
             'link': undefined
         },
         {
+            'name': 'Observatorie Logo',
+            'path': imgPrefix + 'jsyd-observatorie-logo.png',
+            'category': $scope.category.logo.type,
+            'layout': 'landscape',
+            'link': undefined
+        },
+        {
             'name': 'Empty Atlas Key Logo',
             'path': imgPrefix + 'ea-key.png',
             'category': $scope.category.logo.type,

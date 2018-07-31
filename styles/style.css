@@ -21,7 +21,7 @@ li.website > a > article:before {
     max-width: 100px;
     height: auto;
     margin-top: 24px;
-    box-shadow: 0px 0px 0px 8px #038080;
+    box-shadow: 0px 0px 0px 8px black;
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -53,7 +53,7 @@ sup {
 
 a,
 html {
-    color: #000
+    color: #fff
 }
 
 .arrow,
@@ -97,7 +97,7 @@ a {
 }
 
 a.dymo {
-    background-color: #038080 !important;
+    background-color: black;
     color: white !important;
     font-size: 1.1em !important;
 }
