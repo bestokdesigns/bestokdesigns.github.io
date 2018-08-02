@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/style.css">
-<!--
+    <!--
     <style type="text/css">
         .c1-ui-state-hover {
             background-color: yellow !important;
@@ -70,18 +70,6 @@
             <nav>
                 <ul class="grid" style="position: relative; height: 5394.38px;">
 
-                    <!--
-                    <li class="project portrait identity digital loaded" style="position: absolute; left: 0px; top: 0px;">
-                        <a href="https://studiofables.com/grolsch-explore">
-                            <article>
-                                <h2 class="title"><span data-text="Grolsch Explore">Grolsch Explore</span></h2>
-                                <video class="thumb" data-poster="https://studiofables.com/content/2-home/1-grolsch-explore/studiofables-grolschexplore.jpg" muted="" playsinline="" poster="https://studiofables.com/content/2-home/1-grolsch-explore/studiofables-grolschexplore.jpg">
-									<source src="https://studiofables.com/content/2-home/1-grolsch-explore/studiofables-grolschexplore.mp4" type="video/mp4">
-								</video>
-                            </article>
-                        </a>
-                    </li> -->
-
                     <li ng-repeat="p in portfolio" on-finish-render="ngRepeatFinished" class="project {{p.layout}} {{p.category}} identity loaded" style="position: absolute; left: 0px; top: 0px;">
                         <a href="{{p.link}}" target="_blank">
                             <article>
@@ -97,8 +85,8 @@
                 <section>
                     <h3>Say hello</h3>
                     <ul>
-                        <li id="email"><a class="dymo" href="mailto:bestokdesigns@gmail.com">&nbsp;bestokdesigns@gmail.com&nbsp;</a></li>
-                        <li><img src="images/jeana-smith-smol.jpg" alt="Rounded Image" class="img-circle img-responsive img-about"></li>
+                        <li id="email" style="margin-top: 40px;"><a class="dymo" href="mailto:bestokdesigns@gmail.com">&nbsp;bestokdesigns@gmail.com&nbsp;</a></li>
+                        <li style="margin-top: 14px;"><img src="images/jeana-smith-smol.jpg" alt="Rounded Image" class="img-circle img-responsive img-about"></li>
                     </ul>
                 </section>
                 <section id="about">
