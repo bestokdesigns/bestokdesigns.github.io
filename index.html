@@ -36,7 +36,8 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Best Ok Designs">
     <link rel="apple-touch-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/style.css">
     <!--
@@ -51,88 +52,119 @@
 </head>
 
 <body class="teal-bkg" ng-app="jeanasmithgithubioApp" ng-controller="MainCtrl">
-    <!--[if lte IE 9]>
-    	<p class="browserupgrade">To improve your web experience and security, you should <a href="https://browsehappy.com/">upgrade your browser</a>.</p>
-    <![endif]-->
-    <div id="site" class="site noSlide">
-        <header id="header">
-            <h1 class="logo">
-                <a href="#">
-                    <span data-text="Best Ok Designs" class="white-box teal-bkg hide-on-phone" style="font-size: 31px; padding: 23px 44px 20px;">Best Ok Designs</span>
-                    <span id="title-phone" data-text="Best Ok Designs">Best Ok Designs</span>
-                </a>
-            </h1>
-            <p id="description"><span id="none-filter" data-filter=".none" style="display:none;">none</span><span data-filter=".website">websites</span><br><span data-filter=".logo-i">logos</span><br><span data-filter=".t-shirt">t-shirts</span><br><span data-filter=".show-poster">show posters</span></p>
+<!--[if lte IE 9]>
+<p class="browserupgrade">To improve your web experience and security, you should <a href="https://browsehappy.com/">upgrade
+    your browser</a>.</p>
+<![endif]-->
+<div id="site" class="site noSlide">
+    <header id="header">
+        <h1 class="logo">
+            <a href="#">
+                <span data-text="Best Ok Designs" class="white-box teal-bkg hide-on-phone"
+                      style="font-size: 31px; padding: 23px 44px 20px;">Best Ok Designs</span>
+                <span id="title-phone" data-text="Best Ok Designs">Best Ok Designs</span>
+            </a>
+        </h1>
+        <p id="description">
+            <span id="none-filter" data-filter=".none" style="display:none;">none</span>
+            <span data-filter=".website">websites</span>
+            <br>
+            <span data-filter=".logo-i">logos</span>
+            <br>
+            <span data-filter=".t-shirt">t-shirts</span>
+            <br>
+            <span data-filter=".show-poster">show posters</span>
+            <br>
+            <span data-filter=".other">other</span>
+        </p>
 
-            <p id="description-phone" align="center"><span data-filter=".website"><i class="fas fa-globe mb-3"></i></span><br><span data-filter=".logo-i"><i class="fas fa-user-circle mb-3"></i></span><br><span data-filter=".t-shirt"><i class="fas fa-tshirt mb-3"></i></span><br><span data-filter=".show-poster"><i class="fas fa-music mb-3"></i></span></p>
-        </header>
-        <main id="index" style="opacity: 0;">
-            <nav>
-                <ul class="grid" style="position: relative; height: 5394.38px;">
+        <p id="description-phone" align="center">
+            <span data-filter=".website"><i class="fas fa-globe mb-3"></i></span>
+            <br>
+            <span data-filter=".logo-i"><i class="fas fa-user-circle mb-3"></i></span>
+            <br>
+            <span data-filter=".t-shirt"><i class="fas fa-tshirt mb-3"></i></span>
+            <br>
+            <span data-filter=".show-poster"><i class="fas fa-music mb-3"></i></span>
+            <br>
+            <span data-filter=".other"><i class="fas fa-paint-brush mb-3"></i></span>
+        </p>
+    </header>
+    <main id="index" style="opacity: 0;">
+        <nav>
+            <ul class="grid" style="position: relative; height: 5394.38px;">
 
-                    <li ng-repeat="p in portfolio" on-finish-render="ngRepeatFinished" class="project {{p.layout}} {{p.category}} identity loaded" style="position: absolute; left: 0px; top: 0px;">
-                        <a href="{{p.link}}" target="_blank">
-                            <article>
-                                <h2 class="title"><span data-text="{{p.name}}">{{p.name}}</span></h2>
-                                <img class="thumb" src="{{p.path}}" data-poster="{{p.path}}" alt="{{p.name}}">
-                            </article>
-                        </a>
+                <li ng-repeat="p in portfolio" on-finish-render="ngRepeatFinished"
+                    class="project {{p.layout}} {{p.category}} identity loaded"
+                    style="position: absolute; left: 0px; top: 0px;">
+                    <a href="{{p.link}}" target="_blank">
+                        <article>
+                            <h2 class="title"><span data-text="{{p.name}}">{{p.name}}</span></h2>
+                            <img class="thumb" src="{{p.path}}" data-poster="{{p.path}}" alt="{{p.name}}">
+                        </article>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <footer>
+            <section>
+                <h3>Say hello</h3>
+                <ul>
+                    <li id="email" style="margin-top: 40px;"><a class="dymo" href="mailto:bestokdesigns@gmail.com">&nbsp;bestokdesigns@gmail.com&nbsp;</a>
                     </li>
-
+                    <li style="margin-top: 14px;"><img src="images/jeana-smith-smol.jpg" alt="Rounded Image"
+                                                       class="img-circle img-responsive img-about"></li>
                 </ul>
-            </nav>
-            <footer>
-                <section>
-                    <h3>Say hello</h3>
-                    <ul>
-                        <li id="email" style="margin-top: 40px;"><a class="dymo" href="mailto:bestokdesigns@gmail.com">&nbsp;bestokdesigns@gmail.com&nbsp;</a></li>
-                        <li style="margin-top: 14px;"><img src="images/jeana-smith-smol.jpg" alt="Rounded Image" class="img-circle img-responsive img-about"></li>
-                    </ul>
-                </section>
-                <section id="about">
-                    <h3>About me</h3>
-                    <ul>
-                        <li>
-                            <p>I'm a full time software engineer who enjoys dabbling in graphic design and building websites on the side. I am married to my college sweetheart and have two rescue pups.</p>
-                            <p>I'd like to make a Legend of Zelda pun here, but I don't want to <u>Tri</u> and <u>force</u> it.</p>
-                        </li>
-                    </ul>
-                </section>
+            </section>
+            <section id="about">
+                <h3>About me</h3>
+                <ul>
+                    <li>
+                        <p>I'm a full time software engineer who enjoys dabbling in graphic design and building websites
+                            on the side. I am married to my college sweetheart and have two rescue pups.</p>
+                        <p>I'd like to make a Legend of Zelda pun here, but I don't want to <u>Tri</u> and <u>force</u>
+                            it.</p>
+                    </li>
+                </ul>
+            </section>
 
-                <button class="arrow">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 36"><title>Top</title><path d="M11 6.3l-5-5-5 5m5-4.9v34"></path></svg>
-				</button>
+            <button class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 36"><title>Top</title>
+                    <path d="M11 6.3l-5-5-5 5m5-4.9v34"></path>
+                </svg>
+            </button>
 
-            </footer>
-        </main>
-    </div>
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+        </footer>
+    </main>
+</div>
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
 
-    <script src="scripts/app.js"></script>
+<script src="scripts/app.js"></script>
 
-    <!-- endbuild -->
-    <script src="scripts/scripts.js"></script>
-    <script>
-        window.ga = window.ga || function() {
-            (ga.q = ga.q || []).push(arguments)
-        };
-        ga.l = +new Date;
-        ga('create', 'UA-63673806-1', 'auto');
-        ga('send', 'pageview')
+<!-- endbuild -->
+<script src="scripts/scripts.js"></script>
+<script>
+    window.ga = window.ga || function () {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-63673806-1', 'auto');
+    ga('send', 'pageview')
 
-    </script>
+</script>
 
 </body>
 

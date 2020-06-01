@@ -41,8 +41,12 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope,
         website: {
             display: 'websites',
             type: 'website'
+        },
+        other: {
+            display: 'other',
+            type: 'other'
         }
-    }
+    };
 
     /*
     PORTFOLIO OBJECT TEMPLATE
@@ -142,6 +146,13 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope,
             'link': undefined
         },
         {
+            'name': 'En Fuego Logo',
+            'path': imgPrefix + 'en-fuego-logo.png',
+            'category': $scope.category.logo.type,
+            'layout': 'portrait',
+            'link': undefined
+        },
+        {
             'name': 'OffBeat Show Poster',
             'path': imgPrefix + 'offbeat-show-poster.png',
             'category': $scope.category.showPoster.type,
@@ -171,7 +182,7 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope,
         },
         {
             'name': 'Empty Atlas Website',
-            'path': imgPrefix + 'empty-atlas-site.png',
+            'path': imgPrefix + 'empty-atlas-2020-site.png',
             'category': $scope.category.website.type,
             'layout': 'portrait',
             'link': 'https://emptyatlas.com/'
@@ -189,6 +200,27 @@ angular.module('jeanasmithgithubioApp').controller('MainCtrl', function ($scope,
             'category': $scope.category.website.type,
             'layout': 'portrait',
             'link': 'https://www.firstbaptistpoplarville.church/'
+        },
+        {
+            'name': 'Maximal by Empty Atlas Lyric Video',
+            'path': imgPrefix + 'maximal-by-empty-atlas-lyric-video.png',
+            'category': $scope.category.other.type,
+            'layout': 'landscape',
+            'link': 'https://youtu.be/uSARWrWd9fc'
+        },
+        {
+            'name': 'Empty Atlas Banner',
+            'path': imgPrefix + 'empty-atlas-2020-banner.png',
+            'category': $scope.category.other.type,
+            'layout': 'landscape',
+            'link': undefined
+        },
+        {
+            'name': 'Empty Atlas Album Cover - Kairos',
+            'path': imgPrefix + 'kairos-album-by-empty-atlas.png',
+            'category': $scope.category.other.type,
+            'layout': 'landscape',
+            'link': undefined
         }
     ];
 
